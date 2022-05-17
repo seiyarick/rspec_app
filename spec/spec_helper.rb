@@ -16,7 +16,7 @@
 RSpec.configure do |config|
   config.before(:each, type: :system) do#Rack::Testとはails標準のテストの機能で、高速に動作する
     driven_by :rack_test#Rack::Testでテストを行うための記述
-  end                   
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -94,5 +94,5 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-config.include FactoryBot::Syntax::Methods
+# config.include FactoryBot::Syntax::Methods
 end
